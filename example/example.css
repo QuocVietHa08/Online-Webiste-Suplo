@@ -1,0 +1,104 @@
+.owl-item {
+  width: 202px;
+  float: left;
+}
+
+.owl-item .product-item {
+  display: block;
+  background: #fff;
+}
+
+.owl-item .product-item .product-img {
+  padding: 15px 26px;
+  position: relative;
+  transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+}
+
+.owl-item .product-item .product-img .lazyload {
+  width: 100%;
+}
+
+.owl-item .product-item .product-img .product-outofstock {
+  position: absolute;
+  padding: 15px 26px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.owl-item .product-item .product-img .product-outofstock div {
+  width: 100%;
+  height: 100%;
+  background: url(//theme.hstatic.net/1000268436/1000343472/14/out-icon.png?v=1263);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.owl-item .product-item .product-img .product-tagsaleoff {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  background: #c0020f;
+  text-align: center;
+}
+
+.owl-item .product-item .product-title {
+  padding: 0 15px 5px;
+  display: inline-block;
+  color: #333333;
+  height: 50px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.owl-item .product-item .product-price {
+  padding: 0 15px 15px;
+}
+
+.owl-item .product-item .product-price .current-price {
+  float: left;
+  font-size: 14px;
+  color: #c0020f;
+}
+
+.owl-item .product-item .product-price .original-price {
+  float: right;
+  font-size: 12px;
+  color: #999999;
+}
+
+.owl-item:hover .product-title {
+  color: red;
+}
+
+.owl-item:hover .product-img {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.wrapper .your-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=example.css.map */

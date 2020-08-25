@@ -736,3 +736,50 @@ header {
     }
   }
 }
+// noIndex  fixed action  section
+.right-navbar {
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  bottom: 0;
+  a {
+    position: relative;
+    display: flex;
+    height: 34px;
+    left: 100px;
+    padding: 4px 10px;
+    background: #7a6e6e;
+    text-decoration: none;
+    margin-bottom: 2px;
+    width: 120px;
+    transition: all 0.9s ease;
+
+    i {
+      margin-right: 10px;
+      color: #fff;
+      line-height: 34px;
+      text-transform: uppercase;
+    }
+    span {
+      color: #fff;
+      padding-left: 5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 34px;
+    }
+    &:hover {
+      transform: translateX(-80px);
+      background-color: #c0020f;
+    }
+  }
+}
+// responsive section
+// for mobile phone
+// for taplet
+@media all and (max-width: 762px) {
+  body {
+  }
+  .header-top {
+    display: none;
+  }
+}

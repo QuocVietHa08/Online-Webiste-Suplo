@@ -818,4 +818,54 @@ header {
 #footer .ft-copyrights-wrapper a:hover {
   color: red;
 }
+
+.right-navbar {
+  position: fixed;
+  z-index: 9;
+  right: 0;
+  bottom: 0;
+}
+
+.right-navbar a {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34px;
+  left: 100px;
+  padding: 4px 10px;
+  background: #7a6e6e;
+  text-decoration: none;
+  margin-bottom: 2px;
+  width: 120px;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
+}
+
+.right-navbar a i {
+  margin-right: 10px;
+  color: #fff;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.right-navbar a span {
+  color: #fff;
+  padding-left: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 34px;
+}
+
+.right-navbar a:hover {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px);
+  background-color: #c0020f;
+}
+
+@media all and (max-width: 762px) {
+  .header-top {
+    display: none;
+  }
+}
 /*# sourceMappingURL=system-store.css.map */

@@ -1,9 +1,13 @@
 #menu-navbar {
-  border-bottom: 2px solid #c0020f;
   font-size: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Roboto;
   color: #333333;
   font-weight: 300;
+  height: 35px;
+  border-bottom: 2px solid #c0020f;
+  width: 100%;
 }
 
 #menu-navbar .main-navbar {
@@ -21,9 +25,17 @@
           box-sizing: border-box;
 }
 
+#menu-navbar .main-navbar .wrapper .inner .menu-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item {
   list-style: none;
   margin: 0;
+  width: 16%;
   padding: 0;
   margin-left: 0px;
   text-align: center;
@@ -34,109 +46,92 @@
 #menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-head {
   color: white;
   font-size: 14px;
+  text-transform: uppercase;
   background-color: #c0020f;
   height: 100%;
 }
 
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list {
-  padding-left: 0;
-  list-style: none;
-  text-align: left;
-  height: 100%;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li a {
-  color: black;
-  text-decoration: none;
-  padding-left: 30px;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li:hover .level1 {
-  color: red;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li:hover .level2 {
-  color: red;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li:hover .level3 {
-  color: red;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-dropdown,
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-li {
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body {
   position: relative;
+  display: none;
 }
 
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-dropdown i,
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-li i {
-  position: absolute;
-  right: 20px;
-  top: 10px;
-}
-
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-dropdown .megamenu-dropdown:hover .lever-2 li a,
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-li .megamenu-dropdown:hover .lever-2 li a {
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list {
+  margin-top: 0;
+  list-style: none;
+  padding-left: 0;
   color: black;
+  width: 202px;
+  position: relative;
+  text-align: left;
 }
 
-#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list .megamenu-dropdown {
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li {
+  width: 100%;
+  position: relative;
   height: 35px;
 }
 
-.lever-2 {
-  position: relative;
-  left: 202px;
-  top: -35px;
-  list-style: none;
-  padding-left: 0;
-  height: 0;
-  width: 202px;
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li a {
+  text-decoration: none;
+  color: black;
+  padding-left: 40px;
 }
 
-.lever-2 li a {
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li a:hover {
+  color: red;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item .megamenu-body .megamenu-list li i {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item:hover .megamenu-body {
+  display: block;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item2 {
+  width: 84%;
+  height: 35px;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item2 .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: space-evenly; */
+  list-style: none;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item2 .navbar-list li {
+  padding: 0 10px;
+}
+
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item2 .navbar-list li a {
+  text-decoration: none;
   color: black;
 }
 
-.lever-2 li i {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.lever-2 li:hover .hover2 {
+#menu-navbar .main-navbar .wrapper .inner .menu-container .grid-item2 .navbar-list li a:hover {
   color: red;
 }
 
-.chieucao {
-  height: 0 !important;
-}
-
-.displayNone {
+#displayNone,
+#displayNone2 {
   display: none;
 }
 
-.hoverApper {
+.megamenu-dropdown:hover #displayNone {
   display: block;
 }
 
-.megamenu-dropdown:hover {
+#displayNone:hover #displayNone2 {
   display: block;
 }
 
-.ahhihi {
-  display: none;
-}
-
-.megamenu-dropdown:hover > .ahhihi {
-  display: block;
-}
-
-.level2:hover {
-  color: red;
-}
-
-.level3:hover {
-  color: red;
+.megamenu-head:hover .megamenu-body {
+  display: block !important;
 }
 /*# sourceMappingURL=example.css.map */

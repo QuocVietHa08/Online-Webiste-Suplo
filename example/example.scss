@@ -1,11 +1,12 @@
 #menu-navbar {
-  border-bottom: 2px solid #c0020f;
   font-size: 14px;
-
+  box-sizing: border-box;
   font-family: Roboto;
   color: #333333;
   font-weight: 300;
-
+  height: 35px;
+  border-bottom: 2px solid #c0020f;
+  width: 100%;
   .main-navbar {
     background: #ffffff;
     .wrapper {
@@ -15,9 +16,12 @@
       .inner {
         box-sizing: border-box;
         .menu-container {
+          width: 100%;
+          display: flex;
           .grid-item {
             list-style: none;
             margin: 0;
+            width: 16%;
             padding: 0;
             margin-left: 0px;
             text-align: center;
@@ -27,46 +31,63 @@
             .megamenu-head {
               color: white;
               font-size: 14px;
+              text-transform: uppercase;
               background-color: #c0020f;
               height: 100%;
             }
             // megamenu body
             .megamenu-body {
+              position: relative;
+              display: none;
               .megamenu-list {
-                padding-left: 0;
+                margin-top: 0;
                 list-style: none;
+                padding-left: 0;
+                color: black;
+                width: 202px;
+                position: relative;
                 text-align: left;
-                height: 100%;
                 li {
-                  a {
-                    color: black;
-                    text-decoration: none;
-                    padding-left: 30px;
-                  }
-                  &:hover .level1 {
-                    color: red;
-                  }
-                  &:hover .level2 {
-                    color: red;
-                  }
-                  &:hover .level3 {
-                    color: red;
-                  }
-                }
-                .megamenu-dropdown,
-                .megamenu-li {
+                  width: 100%;
                   position: relative;
+                  height: 35px;
+
+                  a {
+                    text-decoration: none;
+                    color: black;
+                    padding-left: 40px;
+                    &:hover {
+                      color: red;
+                    }
+                  }
                   i {
                     position: absolute;
-                    right: 20px;
-                    top: 10px;
-                  }
-                  .megamenu-dropdown:hover .lever-2 li a {
-                    color: black;
+                    right: 10px;
+                    top: 30%;
                   }
                 }
-                .megamenu-dropdown {
-                  height: 35px;
+              }
+            }
+            &:hover .megamenu-body {
+              display: block;
+            }
+            // grid item 2
+          }
+          .grid-item2 {
+            width: 84%;
+            height: 35px;
+            .navbar-list {
+              display: flex;
+              /* justify-content: space-evenly; */
+              list-style: none;
+              li {
+                padding: 0 10px;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  &:hover {
+                    color: red;
+                  }
                 }
               }
             }
@@ -76,49 +97,17 @@
     }
   }
 }
-.lever-2 {
-  position: relative;
-  left: 202px;
-  top: -35px;
-  list-style: none;
-  padding-left: 0;
-  height: 0;
-  width: 202px;
-  li {
-    a {
-      color: black;
-    }
-    i {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-    }
-    &:hover .hover2 {
-      color: red;
-    }
-  }
-}
-.chieucao {
-  height: 0 !important;
-}
-.displayNone {
+#displayNone,
+#displayNone2 {
   display: none;
 }
-.hoverApper {
+
+.megamenu-dropdown:hover #displayNone {
   display: block;
 }
-.megamenu-dropdown:hover {
+#displayNone:hover #displayNone2 {
   display: block;
 }
-.ahhihi {
-  display: none;
-}
-.megamenu-dropdown:hover > .ahhihi {
-  display: block;
-}
-.level2:hover {
-  color: red;
-}
-.level3:hover {
-  color: red;
+.megamenu-head:hover .megamenu-body {
+  display: block !important;
 }

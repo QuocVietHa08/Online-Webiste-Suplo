@@ -1,88 +1,124 @@
-.owl-item {
-  width: 202px;
-  float: left;
-  .product-item {
-    display: block;
-    background: #fff;
-    .product-img {
-      padding: 15px 26px;
-      position: relative;
-      transition: all 0.6s ease;
-      -moz-transition: all 0.6s ease;
-      -webkit-transition: all 0.6s ease;
-      .lazyload {
-        width: 100%;
-      }
-      .product-outofstock {
-        position: absolute;
-        padding: 15px 26px;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        background: rgba(255, 255, 255, 0.4);
-        div {
-          width: 100%;
-          height: 100%;
-          background: url(//theme.hstatic.net/1000268436/1000343472/14/out-icon.png?v=1263);
-          background-repeat: no-repeat;
-          background-size: contain;
-          background-position: center;
+#menu-navbar {
+  border-bottom: 2px solid #c0020f;
+  font-size: 14px;
+
+  font-family: Roboto;
+  color: #333333;
+  font-weight: 300;
+
+  .main-navbar {
+    background: #ffffff;
+    .wrapper {
+      max-width: 1270px;
+      margin: 0 auto;
+      padding: 0 30px;
+      .inner {
+        box-sizing: border-box;
+        .menu-container {
+          .grid-item {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 0px;
+            text-align: center;
+            line-height: 35px;
+            width: 201px;
+            // mega menu head
+            .megamenu-head {
+              color: white;
+              font-size: 14px;
+              background-color: #c0020f;
+              height: 100%;
+            }
+            // megamenu body
+            .megamenu-body {
+              .megamenu-list {
+                padding-left: 0;
+                list-style: none;
+                text-align: left;
+                height: 100%;
+                li {
+                  a {
+                    color: black;
+                    text-decoration: none;
+                    padding-left: 30px;
+                  }
+                  &:hover .level1 {
+                    color: red;
+                  }
+                  &:hover .level2 {
+                    color: red;
+                  }
+                  &:hover .level3 {
+                    color: red;
+                  }
+                }
+                .megamenu-dropdown,
+                .megamenu-li {
+                  position: relative;
+                  i {
+                    position: absolute;
+                    right: 20px;
+                    top: 10px;
+                  }
+                  .megamenu-dropdown:hover .lever-2 li a {
+                    color: black;
+                  }
+                }
+                .megamenu-dropdown {
+                  height: 35px;
+                }
+              }
+            }
+          }
         }
       }
-      .product-tagsaleoff {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-        z-index: 1;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 50%;
-        color: #fff;
-        background: #c0020f;
-        text-align: center;
-      }
-    }
-    .product-title {
-      padding: 0 15px 5px;
-      display: inline-block;
-      color: #333333;
-      height: 50px;
-      font-size: 1.1rem;
-      text-transform: uppercase;
-      font-family: Roboto;
-      text-align: center;
-      font-size: 12px;
-      font-weight: 300;
-    }
-    .product-price {
-      padding: 0 15px 15px;
-      .current-price {
-        float: left;
-        font-size: 14px;
-        color: #c0020f;
-      }
-
-      .original-price {
-        float: right;
-        font-size: 12px;
-        color: #999999;
-      }
     }
   }
 }
-.owl-item:hover .product-title {
+.lever-2 {
+  position: relative;
+  left: 202px;
+  top: -35px;
+  list-style: none;
+  padding-left: 0;
+  height: 0;
+  width: 202px;
+  li {
+    a {
+      color: black;
+    }
+    i {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+    &:hover .hover2 {
+      color: red;
+    }
+  }
+}
+.chieucao {
+  height: 0 !important;
+}
+.displayNone {
+  display: none;
+}
+.hoverApper {
+  display: block;
+}
+.megamenu-dropdown:hover {
+  display: block;
+}
+.ahhihi {
+  display: none;
+}
+.megamenu-dropdown:hover > .ahhihi {
+  display: block;
+}
+.level2:hover {
   color: red;
 }
-.owl-item:hover .product-img {
-  transform: translateY(-10px);
-}
-// wrapper
-.wrapper {
-  text-align: center;
-  .your-class {
-    display: flex;
-  }
+.level3:hover {
+  color: red;
 }

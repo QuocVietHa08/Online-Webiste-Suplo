@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./SignUp.css" />
+    <!-- fontawesom link -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-desktop">
+        <!-- header top section -->
+        <div class="header-top">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="inner-item-one">
+                <!-- Trang chu va He thong cua hang -->
+                <ul class="inner-first">
+                  <li class="inner-main">
+                    <a href="MainPage.html">Trang Chủ</a>
+                  </li>
+                  <li class="inner-main" style="border-left: 1px solid black">
+                    <a href="#" style="margin-left: 3px">He thong cua hang</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Dang nhap Dang ki Khuyen mai section -->
+              <div class="inner-item-one">
+                <ul class="inner-first">
+                  <!-- Dang nhap -->
+                  <li class="inner-main">
+                    <a href="#" style="margin-left: 3px"> Đăng nhập </a>
+                  </li>
+                  <!-- Dang ki -->
+                  <li class="inner-main border-left">
+                    <a href="#" style="margin-left: 3px"> Đăng kí</a>
+                  </li>
+
+                  <!-- Khuyen mai HOT -->
+                  <li class="inner-main border-left">
+                    <a href="#" style="margin-left: 3px"> Khuyến mãi HOT</a>
+                  </li>
+
+                  <!-- Doi tac kinh doanh -->
+                  <li class="inner-main border-left">
+                    <a href="#" style="margin-left: 3px"> Đối tác Kinh Doanh</a>
+                  </li>
+
+                  <!-- Cham soc khach hang -->
+                  <li class="inner-main border-left">
+                    <a href="#" style="margin-left: 3px"
+                      >Chăm sóc khách hàng
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--    header center section -->
+        <!--    header center section -->
+        <div class="header-center">
+          <div class="wrapper">
+            <div class="inner">
+              <div class="header-center-item">
+                <!-- logo section -->
+                <div class="logo-container">
+                  <div class="logo">
+                    <a href="#">
+                      <img
+                        src="/MainPage/img/logo.webp"
+                        alt="Mua hang truc tuyen"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <!-- input section  -->
+                <div class="input-section">
+                  <div class="input-container">
+                    <!-- input place -->
+                    <div class="input-place">
+                      <!-- input button -->
+                      <select name="cars" id="cars">
+                        <option value="volvo">Tất Cả</option>
+                        <option value="saab">Sản phẩm nổi bật</option>
+                        <option value="opel">Sản phầm khuyến mãi</option>
+                      </select>
+                      <!-- input place holder -->
+                      <input type="text" placeholder="Ban muon mua gi?" />
+
+                      <!-- input search button -->
+                      <span>
+                        <button class="input-search-button">TÌM KIẾM</button>
+                      </span>
+                    </div>
+                    <!-- input keyword -->
+                    <div class="input-keyword">
+                      <div class="input-keyword-container">
+                        <ul class="input-keyword-list">
+                          <li class="input-keyword-item">
+                            <a href="#">Smartphone</a>
+                          </li>
+                          <li class="input-keyword-item">
+                            <a href="#">Điện thoại Sam Sung</a>
+                          </li>
+                          <li class="input-keyword-item">
+                            <a href="#">Điện thoại Iphone</a>
+                          </li>
+                          <li class="input-keyword-item">
+                            <a href="#">Thẻ điện thoại</a>
+                          </li>
+                          <li class="input-keyword-item">
+                            <a href="#">Voucher-Dịch vụ</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- status section -->
+                <div class="shopping-status">
+                  <div class="shopping-status-container">
+                    <a href="#" class="shopping-status-content">
+                      Giỏ hàng của bạn
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- megamenu section  -->
+     <!-- megamenu navbar -->
+    <div class="megamenu-navbar">
+      <div class="main-navbar">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="main-navbar-list">
+              <div class="navbar-item section-one">
+                <div class="megamenu-wrapper">
+                  <div class="megamenu-head">
+                    <span>
+                      <i class="fa fa-bars" aria-hidden="true"></i>
+                      Danh mục sản phầm
+                    </span>
+                  </div>
+                  <!-- list menu category about product -->
+                  <div class="megamenu-container">
+                    <div class="megameu-div-content">
+                      <ul class="megamenu-list-ul">
+                        <!-- li dropdown with 2 level -->
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#"
+                            >Đồ gia dụng
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                          </a>
+
+                          <!-- li dropdown level 2 -->
+                          <div class="li-dropdown-part2 level2">
+                            <div class="li-dropdown-level2">
+                              <ul class="megamenu-list-ul">
+                                <!-- li dropdown with 2 level -->
+                                <li
+                                  class="li-dropdown-level1 megamenu-list-item hover-level3"
+                                >
+                                  <a href="#"
+                                    >Dồ dùng nhà bếp
+
+                                    <i
+                                      class="fa fa-angle-right"
+                                      aria-hidden="true"
+                                    ></i>
+                                  </a>
+
+                                  <!-- li dropdown level 3-->
+                                  <div class="li-dropdown-part2 level3">
+                                    <div class="li-dropdown-level2">
+                                      <ul class="megamenu-list-ul">
+                                        <li class="li-dropdown-level1">
+                                          <a href="#">Máy ép - Máy xay</a>
+                                        </li>
+                                        <li class="li-dropdown-level1">
+                                          <a href="#">Máy làm kem </a>
+                                        </li>
+                                        <li class="li-dropdown-level1">
+                                          <a href="#">Nồi cơm điện</a>
+                                        </li>
+                                        <li class="li-dropdown-level1">
+                                          <a href="#">Bếp các loại</a>
+                                        </li>
+                                        <li class="li-dropdown-level1">
+                                          <a href="#">Lò vi sóng</a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <!-- li tag mega menu -->
+                                <li class="li-megamenu megamenu-list-item">
+                                  <a href="#">Thiếu bị gia dụng</a>
+                                </li>
+                                <li class="li-megamenu megamenu-list-item">
+                                  <a href="#">Điều hòa</a>
+                                </li>
+                                <li class="li-megamenu megamenu-list-item">
+                                  <a href="#">Tủ lạnh</a>
+                                </li>
+                                <li class="li-megamenu megamenu-list-item">
+                                  <a href="#">Máy giặt</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </li>
+
+                        <!-- li tag mega menu -->
+                        <li
+                          class="li-megamenu megamenu-list-item"
+                          style="position: relative"
+                        >
+                          <a href="#"
+                            >Thiết bị di động
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                          </a>
+
+                          <!-- megamenu div -->
+                          <ul class="mobile-device-list">
+                            <div class="mobile-device-wrapper">
+                              <!-- mobile device product -->
+                              <div class="mobile-device-product">
+                                <div class="mobile-device-product-item">
+                                  <!-- product name -->
+                                  <div class="product-name">
+                                    <div class="product-name-wapper">
+                                      <a href="#">Smart phone chinh hang</a>
+                                      <i
+                                        class="fa fa-angle-right"
+                                        aria-hidden="true"
+                                        style="
+                                          position: relative;
+                                          left: 0;
+                                          top: 3px;
+                                        "
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <!-- product list brand -->
+                                  <div class="product-list-brand">
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Xiaomi</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Samsung </a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Apple</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Oppo</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Nokia</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">HTC</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Huawai</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Sony</a>
+                                    </div>
+
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Asus</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- item 2 -->
+                                <div class="mobile-device-product-item">
+                                  <!-- product name -->
+                                  <div class="product-name">
+                                    <div class="product-name-wapper">
+                                      <a href="#">May tính bảng</a>
+                                      <i
+                                        class="fa fa-angle-right"
+                                        aria-hidden="true"
+                                        style="
+                                          position: relative;
+                                          left: 0;
+                                          top: 3px;
+                                        "
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <!-- product list brand -->
+                                  <div class="product-list-brand">
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#" style=""
+                                        >Thương hiệu CutePad</a
+                                      >
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thương hiệu Mobell </a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thương hiệu Itel</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thương hiệu Samsung</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thương hiệu Kindle</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thương hiệu Apple</a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- item 3 -->
+                                <div class="mobile-device-product-item">
+                                  <!-- product name -->
+                                  <div class="product-name">
+                                    <div class="product-name-wapper">
+                                      <a href="#">Điện thoại phổ thông</a>
+                                      <i
+                                        class="fa fa-angle-right"
+                                        aria-hidden="true"
+                                        style="
+                                          position: relative;
+                                          left: 0;
+                                          top: 3px;
+                                        "
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <!-- product list brand -->
+                                  <div class="product-list-brand">
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#" style=""
+                                        >Điện thoại dưới 1 trieu</a
+                                      >
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Điện thoại dưới 2 trieu </a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Điện thoại dưới 3 trieu</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Điện thoại Nokia </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- item 4 -->
+                                <div class="mobile-device-product-item">
+                                  <!-- product name -->
+                                  <div class="product-name">
+                                    <div class="product-name-wapper">
+                                      <a href="#">Phụ kiện điện thoại</a>
+                                      <i
+                                        class="fa fa-angle-right"
+                                        aria-hidden="true"
+                                        style="
+                                          position: relative;
+                                          left: 0;
+                                          top: 3px;
+                                        "
+                                      ></i>
+                                    </div>
+                                  </div>
+                                  <!-- product list brand -->
+                                  <div class="product-list-brand">
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#" style="">Pin dự phòng</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Dây cáp sác </a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Thẻ nhớ điện thoại</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Sạc không dây</a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Bap da ốp lưng </a>
+                                    </div>
+                                    <div class="product-brand-item">
+                                      <span>|</span>
+                                      <a href="#">Dán màn hình</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- mobile device brand img -->
+                              <div class="mobile-device-img">
+                                <!-- picture 1 -->
+                                <div class="brand-img">
+                                  <a href="#">
+                                    <img
+                                      src="//theme.hstatic.net/1000268436/1000343472/14/hd_mainlink_icon2_1.png?v=1271"
+                                      alt="Thiết bị di động"
+                                    />
+                                  </a>
+                                </div>
+                                <!-- picture 2 -->
+                                <div class="brand-img">
+                                  <a href="#">
+                                    <img
+                                      src="//theme.hstatic.net/1000268436/1000343472/14/hd_mainlink_icon2_2.png?v=1271"
+                                      alt="Thiết bị di động"
+                                  /></a>
+                                </div>
+                                <!-- picture 3 -->
+                                <div class="brand-img">
+                                  <a href="#">
+                                    <img
+                                      src="//theme.hstatic.net/1000268436/1000343472/14/hd_mainlink_icon2_1.png?v=1271"
+                                      alt="Thiết bị di động"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </ul>
+                        </li>
+
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Đồ điện tử</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Máy tính</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Thời trang nam</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Thời trang nữ</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Mẹ và bé</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Đồ thể thao</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Qùa lưu niệm</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Coupon -voucher</a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Đồ phụ kiện </a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Sách truyện </a>
+                        </li>
+                        <li
+                          class="li-dropdown-level1 megamenu-list-item hover-level2"
+                        >
+                          <a href="#">Đồ điện tử</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- navbar-item section -two -->
+              <div class="section-two">
+                <ul class="list-contact-container">
+                  <li>
+                    <a href="#">Tất cả tin tức</a>
+                  </li>
+                  <li>
+                    <a href="#">Liên hệ hỗ trợ</a>
+                  </li>
+                  <li>
+                    <a href="#">Giới thiệu Suplo</a>
+                  </li>
+                  <li>
+                    <a href="#">Điều khoản sử dụng</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- end of section -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- breadecurm section  -->
+      <!-- breakecrum section  -->
+    <section id="breadcrumb-wrapper">
+      <div class="breadcrumb-content">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="breadcrumb-small">
+              <a href="/" title="Quay trở về trang chủ">Trang chủ</a>
+
+              <span class="breadcrumb-seperator" aria-hidden="true">/</span>
+              <span>Tao tai khoan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- sign up form section  -->
+    <div id="PageContainer" class="SignUpForm">
+        <main class="main-content">
+            <section id="page-wrapper">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="grid">
+                            <div class="grid-item">
+                                <h1>Tao tai khoan</h1>
+                                <div  class="form-vertical">
+                                    <form accept-charset="UTF-8" action="/account" id="create_customer" method="post">
+                                    <!-- <input name="form_type" type="hidden" value="create_customer">
+
+                          <input name="utf8" type="hidden" value="✓"> -->
+
+						<!-- <label for="FirstName" class="hidden-label">Tên</label> -->
+						<input type="text" name="customer[first_name]" id="FirstName" class="input-full" placeholder="Tên" autocapitalize="words" autofocus="">
+                        <br>
+						<!-- <label for="LastName" class="hidden-label">Họ</label> -->
+						<input type="text" name="customer[last_name]" id="LastName" class="input-full" placeholder="Họ" autocapitalize="words">
+                        <br>
+						<!-- <label for="Email" class="hidden-label">Email</label> -->
+						<input type="email" name="customer[email]" id="Email" class="input-full" placeholder="Email" autocorrect="off" autocapitalize="off">
+                        <br>
+						<!-- <label for="CreatePassword" class="hidden-label">Mật khẩu</label> -->
+						<input type="password" name="customer[password]" id="CreatePassword" class="input-full" placeholder="Mật khẩu">
+
+						<p>
+							<input type="submit" value="Đăng ký" class="btn btn--full">
+						</p>
+						<a href="https://suplo-store-2.myharavan.com">Trở về</a>
+                            </form>
+						
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <!-- policy section  -->
+    <!-- home policy -->
+    <div id="home-policy">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="policy-container">
+            <!-- policy item  -->
+            <div class="policy-item">
+              <div class="hpolicy-item">
+                <img
+                  src="//theme.hstatic.net/1000268436/1000343472/14/hpolicy_img1.jpg?v=1271"
+                  alt="Giá cả hợp lý"
+                />
+                <span>Giá cả hợp lý</span>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="policy-item">
+              <div class="hpolicy-item text-center">
+                <img
+                  src="//theme.hstatic.net/1000268436/1000343472/14/hpolicy_img2.jpg?v=1271"
+                  alt="Sản phẩm chính hãng"
+                />
+                <span>Sản phẩm chính hãng</span>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="policy-item">
+              <div class="hpolicy-item text-center">
+                <img
+                  src="//theme.hstatic.net/1000268436/1000343472/14/hpolicy_img3.jpg?v=1271"
+                  alt="Vận chuyển nhanh chóng"
+                />
+                <span>Vận chuyển nhanh chóng</span>
+              </div>
+            </div>
+            <!-- item 4 -->
+            <div class="policy-item">
+              <div class="hpolicy-item text-center">
+                <img
+                  src="//theme.hstatic.net/1000268436/1000343472/14/hpolicy_img4.jpg?v=1271"
+                  alt="Bảo mật thông tin"
+                />
+                <span>Bảo mật thông tin</span>
+              </div>
+            </div>
+            <!-- end of policy item  -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section  -->
+    <!-- footer section  -->
+    <footer id="footer">
+      <!-- ft nav wrapper -->
+      <div class="ft-nav-wrapper">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="ft-nav-container">
+              <!-- list of item -->
+              <!-- item 1 -->
+              <div class="ft-nav-item">
+                <div class="ft-nav">
+                  <h4>Liên kết nhanh</h4>
+                  <ul class="no-bullets">
+                    <li>
+                      <a href="/">Tài khoản của tôi</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Lịch sử đơn hàng</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Danh sách mong muốn</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Bản tin</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Mã giảm giá của tôi</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- item 5 -->
+              <div class="ft-nav-item">
+                <div class="ft-nav">
+                  <h4>Các bộ sưu tập</h4>
+                  <ul class="no-bullets">
+                    <li>
+                      <a href="/">Chính sách vận chuyên </a>
+                    </li>
+
+                    <li>
+                      <a href="/">Vận chuyển quốc tế</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Đại lý</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Điều khoảng và điều kiện </a>
+                    </li>
+
+                    <li>
+                      <a href="/">Thanh toán khi giao hàng</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- item 2  -->
+              <div class="ft-nav-item">
+                <div class="ft-nav">
+                  <h4>Hướng dẫn mua hàng</h4>
+                  <ul class="no-bullets">
+                    <li>
+                      <a href="/">Giảm giá</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Dich vụ</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Khách hàng </a>
+                    </li>
+
+                    <li>
+                      <a href="/">Tìm kiếm nâng cao </a>
+                    </li>
+
+                    <li>
+                      <a href="/">Chính sách bảo mật </a>
+                    </li>
+                    <li>
+                      <a href="/">Liên hệ chúng tôi </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="ft-nav-item">
+                <div class="ft-nav">
+                  <h4>chẳm sóc khách hàng</h4>
+                  <ul class="no-bullets">
+                    <li>
+                      <a href="/">Về chúng tôi </a>
+                    </li>
+
+                    <li>
+                      <a href="/">Hỏi đáp</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Thông tin giao hàng</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Liên hệ chúng tôi</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- item 4 -->
+              <div class="ft-nav-item">
+                <div class="ft-nav">
+                  <h4>đối tác kinh doanh</h4>
+                  <ul class="no-bullets">
+                    <li>
+                      <a href="/">Tìm kiếm</a>
+                    </li>
+
+                    <li>
+                      <a href="/">Giới Thiệu</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+            <!-- ft-shortlink-wrapper -->
+
+            <div class="ft-shortlinks-wrapper">
+              <div class="wrapper">
+                <div class="inner">
+                  <div class="ft-shortlinks text-center">
+                    <ul class="no-bullets text-center">
+                      <li>
+                        <a href="/">Các bước mua hàng</a>
+                        <span>|</span>
+                      </li>
+
+                      <li>
+                        <a href="/">Tài khoản</a>
+                        <span>|</span>
+                      </li>
+
+                      <li>
+                        <a href="/">Các câu hỏi thường gặp</a>
+                        <span>|</span>
+                      </li>
+
+                      <li>
+                        <a href="/">Dịch vụ khách hàng</a>
+                        <span>|</span>
+                      </li>
+
+                      <li>
+                        <a href="/">Điều khoản bảo mật</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- footer copyright -wrapper -->
+            <div class="ft-copyrights-wrapper text-center">
+              Copyrights © 2017 by
+              <a target="_blank" href="http://suplo.vn">Suplo</a>.
+              <a target="_blank" href="https://www.haravan.com"
+                >Powered by Haravan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer section  -->
+<!-- right navbar -->
+<!-- noIndex fixed action  -->
+    <div id="notIndex-fixed-actions" class="right-navbar">
+      <a href="#account">
+        <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+        <span>Tai khoan</span>
+      </a>
+      <!-- item 1-->
+      <a href="#shopping-cart">
+        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+        <span>Gio hang</span>
+      </a>
+      <!-- item 2 -->
+      <a href="#home-page">
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+        <span>Trang chu</span>
+      </a>
+      <!-- item 3 -->
+      <a href="#facebook-link">
+        <i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
+        <span>facebook</span>
+      </a>
+      <!-- item 4 -->
+      <a href="#instargram-link">
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <span>instagram</span>
+      </a>
+      <!-- item 5 -->
+      <a href="#twitter-link">
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <span>tiwtter</span>
+      </a>
+      <!-- item 6 -->
+      <a href="#header">
+        <i class="fa fa-google fa-2x" aria-hidden="true"></i>
+        <span>google</span>
+      </a>
+      <!-- item 7 -->
+      <a href="#">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        <span>top</span>
+      </a>
+      <!-- end of item -->
+    </div>
+<!-- end of right navbar -->
+
+  </body>
+</html>
